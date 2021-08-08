@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C85</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="fabric.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body class="body_background">
+
+	<center>
+
+	<h2 class="btn-warning">MINECRAFT</h2>
+
+	<div id="head_info" class="btn-success">
+		<h3>Current Width  = <span id="current_width">30</span>
+		</h3>&nbsp;&nbsp;
+		<h3>Current Height  = <span id="current_height">30</span></h3>
+	</div>
+	<br/>
+	<p class="text-danger" id="invalid"></p>
+	<br/>
+	<canvas id="myCanvas" height="600" width="1000"></canvas>
+	<br/>
+	<br/>
+	</center>
+	<div class="btn-warning" id="controls">
+		<p id="heading_control">Controls</p>
+		<ol>
+          <li>Press W for wall</li>
+		  <li>Press R for roof</li>
+		  <li>Press T for trunk</li>
+		  <li>Press Y for Yellow Wall</li>
+		  <li>Press U for a unique block</li>
+		  <li>Press D for dark green leaves</li>
+		  <li>Press G for ground</li>
+		  <li>Press L for light green leaves</li>
+		  <li>Press C for Clouds</li> 
+		  <li>For increasing the block size, press Shift + P</li>
+		  <li>For decreasing the block size, press Shift + M</li> 
+		</ol>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
