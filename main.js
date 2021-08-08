@@ -57,7 +57,7 @@ if(e.shiftKey == true && keyPressed == '80')
 	document.getElementById("current_width").innerHTML = block_image_width;
 	document.getElementById("current_height").innerHTML = block_image_height;	
     if (block_image_width >= 0 && block_image_height >= 0){
-        document.getElementById("invalid").style.display = "inline-block";
+        document.getElementById("invalid").style.display = "none";
     }
 }
 if(e.shiftKey && keyPressed == '77')
@@ -68,10 +68,11 @@ if(e.shiftKey && keyPressed == '77')
 	document.getElementById("current_width").innerHTML = block_image_width;
 	document.getElementById("current_height").innerHTML = block_image_height;
     if (block_image_width < 0 && block_image_height < 0){
-        document.getElementById("invalid").style.display = "None";
         document.getElementById("invalid").innerHTML = "Invalid width and height";
+        document.getElementById("invalid").style.display = "inline-block";
         block_image_height = 0;
         block_image_width = 0;
+        console.log("invalid")
     }
 }
 
