@@ -56,6 +56,9 @@ if(e.shiftKey == true && keyPressed == '80')
 	block_image_height = block_image_height + 10;
 	document.getElementById("current_width").innerHTML = block_image_width;
 	document.getElementById("current_height").innerHTML = block_image_height;	
+    if (block_image_width >= 0 && block_image_height >= 0){
+        document.getElementById("invalid").style.display = "inline-block";
+    }
 }
 if(e.shiftKey && keyPressed == '77')
 {
@@ -64,6 +67,12 @@ if(e.shiftKey && keyPressed == '77')
 	block_image_height = block_image_height - 10;
 	document.getElementById("current_width").innerHTML = block_image_width;
 	document.getElementById("current_height").innerHTML = block_image_height;
+    if (block_image_width < 0 && block_image_height < 0){
+        document.getElementById("invalid").style.display = "None";
+        document.getElementById("invalid").innerHTML = "Invalid width and height";
+        block_image_height = 0;
+        block_image_width = 0;
+    }
 }
 
 	if(keyPressed == '38')
